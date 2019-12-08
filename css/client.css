@@ -1,0 +1,33 @@
+#client{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 15px;
+}
+.client-avatar{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.client-text{
+    margin-left: 5px;
+    overflow: paged-y;
+    background-color: lightgreen;
+    border-radius: 10px;
+    padding: 6px 15px 6px 15px;
+}
+
+.client-time{
+    height: 20px;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEAF1;
+    margin-right: 5px;
+}

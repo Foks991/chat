@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bot.css">
+    <link rel="stylesheet" href="css/client.css">
+</head>
+
+<body>
+    <div class="chatPage">
+        <header class="chatPage__header">
+            <span id="serverState">OFFLINE</span>
+        </header>
+
+        <div class="chatPage__chat chat">
+
+            <div id="messages" class="chat__messages messages">
+                <p id="userFind">------ Companion found - communicate ------</p>
+            </div>
+
+            <div class="chat__writeMessage writeMessage">
+                <div class="writeMessage message">
+                    <form id="form">
+
+                        <input type="text" id="input" required autofocus autocomplete="off" maxlength="40">
+                    </form>
+                    <div class="typing" id="typing">
+                        <img class="sss" src="img/loading.gif"  width="50" height="50" alt="user">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/date.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/server.js"></script>
+</body>
+</html>
