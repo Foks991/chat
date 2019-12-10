@@ -16,9 +16,12 @@ function botMessages(value) {
     div.appendChild(img);
     div.appendChild(text);
     div.appendChild(time);
-    text.innerHTML = value;
     messages.appendChild(div);
     time.innerHTML = hours + ":" + minutes;
+    text.innerHTML = value;
+    if (value === "goodbye"){
+        ws.close()
+    }
 }
 
 function clientMessages(value) {
@@ -34,7 +37,7 @@ function clientMessages(value) {
     div.appendChild(time);
     div.appendChild(text);
     div.appendChild(img);
-    text.innerHTML = value;
     messages.appendChild(div);
     time.innerHTML = hours + ":" + minutes;
+    text.innerHTML = value;
 }
