@@ -1,18 +1,19 @@
 {
-  "name": "web_socket",
+  "name": "chat",
   "version": "1.0.0",
-  "description": "",
-  "main": "js/server.js",
+  "description": "Introduction ============ This is the source code of the portfolio which we've built in our HTML 5 + CSS 3 Tutorial on YouTube.",
+  "main": "index.js",
   "scripts": {
-    "start": "node js/server.js"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "ws": "^7.1.0"
-  },
-  "devDependencies": {
-    "lite-server": "^2.5.3"
+    "express": "^4.16.1",
+    "http": "0.0.0",
+    "ws": "^7.2.0"
   }
 }

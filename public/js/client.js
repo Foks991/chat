@@ -1,4 +1,5 @@
-const ws = new WebSocket('ws://localhost:5000');
+const ws = new WebSocket('ws://speaktome.eu-4.evennode.com/');
+//const ws = new WebSocket('ws://localhost:5000/');
 const afkMassage = ['ты тут?', 'через 3 секунды я уйду', 'goodbye'];
 const afkTime = [15000, 30000, 45000];
 const timeOutId = [];
@@ -27,7 +28,11 @@ ws.onmessage = (response) =>  {
         isTrue = false;
     }else{
         setTimeout( ()=> {
-            botMessages(response.data);
+            if(response.data === "time"){
+                botMessages(new Date().getHours() + ":" + (new Date().getMinutes() < 10 ? ('0' + new Date().getMinutes()) :  new Date().getMinutes()));
+            }else{
+                botMessages(response.data);
+            }
         }, 1000);
         isTrue = true;
     }

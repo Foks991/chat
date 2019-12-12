@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Chat</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bot.css">
-    <link rel="stylesheet" href="css/client.css">
+  <meta charset="utf-8">
+  <title>Chat</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/bot.css">
+  <link rel="stylesheet" href="/static/css/client.css">
 </head>
 
 <body>
-    <div class="chatPage">
 
-        <div class="chatPage__chat chat">
+  <div class="chatPage">
+    <div class="chatPage__chat chat">
 
-            <header class="chatPage__header">
-                <span id="serverState">OFFLINE</span>
-            </header>
+      <header class="chatPage__header">
+        <span id="serverState">OFFLINE</span>
+      </header>
 
-            <div id="messages" class="chat__messages messages"></div>
+      <div id="messages" class="chat__messages messages"></div>
 
-            <div class="writeMessage message">
-                <form id="form">
-                    <input type="text" id="input" required autofocus autocomplete="off" maxlength="40">
-                    <button type="submit" id="submitButton">Send</button>
-                </form>
+      <div class="writeMessage message">
+        <form id="form">
+          <input type="text" id="input" required autofocus autocomplete="off" maxlength="40">
+          <button type="submit" id="submitButton">Send</button>
+        </form>
+      </div>
 
-            </div>
-
-        </div>
     </div>
+  </div>
 
-    <script src="js/date.js"></script>
-    <script src="js/model.js"></script>
-    <script src="js/controller.js"></script>
-    <script src="js/client.js"></script>
-    <script src="js/server.js"></script>
+  <script src="/static/js/model.js"></script>
+  <script src="/static/js/controller.js"></script>
+  <script src="/static/js/client.js"></script>
+
 </body>
 </html>
